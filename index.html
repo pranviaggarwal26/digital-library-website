@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyShelf | Digital Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo"><span class="logo-icon">S</span> StudyShelf</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#library">Library</a>
+      <a href="#about">About</a>
+    </nav>
+    <a href="#library" class="nav-button">Explore Library ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR LEARNING SPACE</span>
+        <h1>Knowledge begins<br>with <span>one page.</span></h1>
+        <p>Discover books, courses, and study materials from trusted educational platforms — all in one place.</p>
+        <a href="#library" class="primary-button">Explore Resources <span>→</span></a>
+        <div class="hero-note">
+          <span class="note-dot"></span>
+          Learn something new, every day.
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-circle"></div>
+        <div class="book book-one"><span>THE ART OF</span><strong>LEARNING</strong><small>Knowledge Collection</small></div>
+        <div class="book book-two"><span>EXPLORE</span><strong>IDEAS</strong><small>Volume 02</small></div>
+        <div class="book book-three"><span>BUILD YOUR</span><strong>FUTURE</strong><small>Student Edition</small></div>
+        <div class="floating-label">✦ Keep growing</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>15+</strong><span>Learning resources</span></div>
+      <div><strong>06</strong><span>Subject categories</span></div>
+      <div><strong>100%</strong><span>Free to explore</span></div>
+    </section>
+
+    <section class="library-section" id="library">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE COLLECTION</span>
+          <h2>Explore the library<span>.</span></h2>
+          <p>Find the right resources for your next learning adventure.</p>
+        </div>
+        <span class="resource-count" id="resourceCount">15 resources</span>
+      </div>
+
+      <div class="search-area">
+        <div class="search-box">
+          <span>⌕</span>
+          <input type="text" id="searchInput" placeholder="Search by book or resource title...">
+          <button id="clearSearch" aria-label="Clear search">✕</button>
+        </div>
+      </div>
+
+      <div class="filter-area">
+        <span class="filter-label">SUBJECT</span>
+        <div class="filters" id="filterButtons">
+          <button class="filter-btn active" data-subject="All">All Resources</button>
+          <button class="filter-btn" data-subject="Computer Science">Computer Science</button>
+          <button class="filter-btn" data-subject="Mathematics">Mathematics</button>
+          <button class="filter-btn" data-subject="Science">Science</button>
+          <button class="filter-btn" data-subject="Engineering">Engineering</button>
+          <button class="filter-btn" data-subject="Business">Business</button>
+          <button class="filter-btn" data-subject="General">General</button>
+        </div>
+      </div>
+
+      <div class="resource-grid" id="resourceGrid"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <div>⌕</div>
+        <h3>No resources found</h3>
+        <p>Try another title or select a different subject.</p>
+        <button id="resetFilters">Clear filters</button>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-icon">✦</div>
+      <div>
+        <span class="eyebrow">ABOUT STUDYSHELF</span>
+        <h2>A little knowledge goes<br> a long way.</h2>
+        <p>StudyShelf brings together useful educational books, tutorials, and courses from established learning platforms. Browse by subject and access the original resource whenever you're ready to learn.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#" class="logo"><span class="logo-icon">S</span> StudyShelf</a>
+    <p>Made for curious minds. © <span id="year"></span> StudyShelf</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
